@@ -37,8 +37,8 @@ function q(k, t) {
 };
 
 c = document.getElementById('background');
-c.width = w = document.body.clientHeight;
-c.height = h = document.body.clientWidth;
+c.width = w = document.getElementById('header').offsetWidth;
+c.height = h = document.getElementById('header').offsetHeight;
 d = c.getContext('2d');
 
 x = [];
