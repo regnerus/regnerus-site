@@ -8,7 +8,6 @@
 # Local files
 *.build
 *static/fonts
-static/css/style.css
 .htaccess
 
 # SASS
