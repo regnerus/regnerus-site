@@ -1,3 +1,12 @@
+.pompebled {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMy41IC0xNi41IDMwIDMwIj48cGF0aCBkPSJNMCAxMkExNi4xNDMgMTYuMSAwIDAgMSAtMTQgLTRBNyA4IDAgMCAxIC03IC0xMkE2IDggMCAwIDEgLTEgLTVBMSAxIDAgMSAwIDEgLTVBNiA4IDAgMCAxIDcgLTEyQTcgOCAwIDAgMSAxNCAtNEExNi4xNDMgMTYuMSAwIDAgMSAwIDEyeiIgZmlsbD0iI0ZGMzkzMiIgdHJhbnNmb3JtPSJyb3RhdGUoMzQuNjk1KSIvPjwvc3ZnPg==);
+  background-size: auto;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, dialog {
   display: block; }
 
