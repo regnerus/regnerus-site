@@ -100,6 +100,11 @@ hr {
   cursor: help;
   opacity: 0.25; }
 
+.content small {
+    display: block;
+    margin-left: 16px;
+}
+
 header[role="banner"] {
   position: relative;
   overflow: hidden;
