@@ -1,0 +1,138 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Bouke Regnerus",
+  "givenName": "Bouke",
+  "familyName": "Regnerus",
+  "jobTitle": "{{ site.data.translations[page.lang].job_title }}",
+  "url": "http://regner.us",
+  "email": "bouke@regner.us",
+  "telephone": "+31612455817",
+  "birthPlace": {
+    "@type": "Place",
+    "name": "Friesland, Netherlands"
+  },
+  "homeLocation": {
+    "@type": "PostalAddress",
+    "streetAddress": "Weverstraat 7",
+    "postalCode": "7545 TJ",
+    "addressLocality": "{{ site.data.translations[page.lang].locality }}",
+    "addressRegion": "Overijssel",
+    "addressCountry": "{{ site.data.translations[page.lang].country }}"
+  },
+  "knowsLanguage": [
+    {
+      "@type": "Language",
+      "name": "Dutch"
+    },
+    {
+      "@type": "Language",
+      "name": "English"
+    },
+    {
+      "@type": "Language",
+      "name": "Frisian"
+    }
+  ],
+  "knowsAbout": [
+    "React Native",
+    "TypeScript",
+    "Mobile App Development",
+    "Smart Home Technology",
+    "Youth Coaching",
+    "ESPHome",
+    "Arduino",
+    "DIY Electronics"
+  ],
+  "hasOccupation": [
+    {
+      "@type": "Occupation",
+      "name": "Mobile App Developer",
+      "occupationLocation": {
+        "@type": "Organization",
+        "name": "Athom B.V."
+      }
+    },
+    {
+      "@type": "Occupation",
+      "name": "Youth Coach",
+      "occupationLocation": {
+        "@type": "Organization",
+        "name": "Bouke Regnerus",
+        "identifier": "KvK 96884029"
+      }
+    }
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Youth Coach / Opleiding Jongerencoach",
+      "credentialCategory": "Professional Certification",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "NHA Cursussen en opleidingen"
+      },
+      "dateCreated": "2024-04"
+    }
+  ],
+  "alumniOf": [
+    {
+      "@type": "Organization",
+      "name": "University of Twente",
+      "department": "Human Media Interaction",
+      "degree": "Master of Science (MSc)"
+    },
+    {
+      "@type": "Organization",
+      "name": "University of Twente",
+      "department": "Creative Technology",
+      "degree": "Bachelor of Science (BSc)"
+    }
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Athom B.V.",
+    "department": "Mobile Development"
+  },
+  "memberOf": [
+    {
+      "@type": "Organization",
+      "name": "Stichting Join Us"
+    }
+  ],
+  "owns": [
+    {
+      "@type": "Organization",
+      "name": "Bouke Regnerus",
+      "identifier": "KvK 96884029",
+      "description": "Freelance Youth Coaching"
+    }
+  ],
+  "workExample": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Homey Mobile App",
+      "applicationCategory": "Smart Home",
+      "operatingSystem": "iOS, Android"
+    }
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/boukeregnerus/",
+    "http://github.com/regnerus"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+31-6-12455817",
+    "contactType": "Personal",
+    "availableLanguage": [
+      "Dutch",
+      "English",
+      "Frisian"
+    ]
+  },
+  "nationality": "Dutch",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  }
+}

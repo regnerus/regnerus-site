@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en-US" dir="ltr">
+<html lang="{{ page.lang | default: site.lang }}" dir="ltr">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Bouke Regnerus - Mobile App Developer & Youth Coach</title>
-    <meta name="description" content="Bouke Regnerus is a Mobile App Developer at Athom (Homey) and freelance Youth Coach. He builds React Native apps and supports young people with social challenges. Based in Enschede, Netherlands." />
-    <meta name="keywords" content="Bouke Regnerus, Mobile App Developer, React Native, TypeScript, Athom, Homey, Youth Coach, Enschede, Netherlands, Smart Home, ESPHome, Arduino, DIY Electronics, Join Us, KvK 96884029" />
+    <title>{{ site.title }} – {{ site.data.translations[page.lang].title }}</title>
+    
+    <meta name="description" content="{{ site.data.translations[page.lang].meta_description }}" />
+    <meta name="keywords" content="{{ site.data.translations[page.lang].keywords }}" />
     <meta name="author" content="Bouke Regnerus" />
     <meta name="robots" content="index, follow" />
     <meta name="language" content="en-US" />
@@ -14,17 +15,22 @@
     <meta name="geo.placename" content="Enschede" />
     <meta name="geo.position" content="52.2215;6.8937" />
     <meta name="ICBM" content="52.2215, 6.8937" />
+    <meta name="theme-color" content="#a078ff" />
+
+    <link rel="alternate" hreflang="en" href="{{ '/' | absolute_url }}" />
+    <link rel="alternate" hreflang="nl" href="{{ '/nl/' | absolute_url }}" />
+    <link rel="canonical" href="{{ page.url | absolute_url }}" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-        
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://regner.us" />
-    <meta property="og:title" content="Bouke Regnerus - React Native Developer & Youth Coach" />
-    <meta property="og:description" content="React Native developer and youth coach based in Enschede, Netherlands." />
+    <meta property="og:title" content="{{ site.title }} – {{ site.data.translations[page.lang].title }}" />
+    <meta property="og:description" content="{{ site.data.translations[page.lang].meta_description_short }}" />
     <meta property="og:site_name" content="Bouke Regnerus" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:latitude" content="52.2215" />
@@ -32,146 +38,25 @@
     <meta property="og:locality" content="Enschede" />
     <meta property="og:region" content="Overijssel" />
     <meta property="og:country-name" content="Netherlands" />
-    
+
     <!-- Twitter -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Bouke Regnerus - React Native Developer & Youth Coach" />
-    <meta name="twitter:description" content="React Native developer and youth coach based in Enschede, Netherlands." />
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="http://regner.us" />
-    
+    <meta name="twitter:title" content="{{ site.title }} – {{ site.data.translations[page.lang].title }}" />
+    <meta name="twitter:description" content="{{ site.data.translations[page.lang].meta_description_short }}" />
+
     <!-- Microformats -->
     <link rel="profile" href="http://microformats.org/profile/hcard" />
-    
+
     <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
-    
+
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Bouke Regnerus",
-      "givenName": "Bouke",
-      "familyName": "Regnerus",
-      "jobTitle": "Mobile App Developer",
-      "url": "http://regner.us",
-      "email": "bouke@regner.us",
-      "telephone": "+31612455817",
-      "birthPlace": {
-        "@type": "Place",
-        "name": "Friesland, Netherlands"
-      },
-      "homeLocation": {
-        "@type": "PostalAddress",
-        "streetAddress": "Weverstraat 7",
-        "postalCode": "7545 TJ",
-        "addressLocality": "Enschede",
-        "addressRegion": "Overijssel",
-        "addressCountry": "Netherlands"
-      },
-      "knowsLanguage": [
-        {
-          "@type": "Language",
-          "name": "Dutch"
-        },
-        {
-          "@type": "Language", 
-          "name": "English"
-        },
-        {
-          "@type": "Language",
-          "name": "Frisian"
-        }
-      ],
-      "knowsAbout": [
-        "React Native", 
-        "TypeScript", 
-        "Mobile App Development", 
-        "Smart Home Technology", 
-        "Youth Coaching",
-        "ESPHome",
-        "Arduino",
-        "DIY Electronics"
-      ],
-      "hasOccupation": [
-        {
-          "@type": "Occupation",
-          "name": "Mobile App Developer",
-          "occupationLocation": {
-            "@type": "Organization",
-            "name": "Athom B.V."
-          }
-        },
-        {
-          "@type": "Occupation", 
-          "name": "Youth Coach",
-          "occupationLocation": {
-            "@type": "Organization",
-            "name": "Bouke Regnerus",
-            "identifier": "KvK 96884029"
-          }
-        }
-      ],
-      "hasCredential": [
-        {
-          "@type": "EducationalOccupationalCredential",
-          "name": "Youth Coach / Opleiding Jongerencoach",
-          "credentialCategory": "Professional Certification",
-          "recognizedBy": {
-            "@type": "Organization",
-            "name": "NHA Cursussen en opleidingen"
-          },
-          "dateCreated": "2024-04"
-        }
-      ],
-      "alumniOf": [
-        {
-          "@type": "Organization",
-          "name": "University of Twente",
-          "department": "Human Media Interaction",
-          "degree": "Master of Science (MSc)"
-        },
-        {
-          "@type": "Organization",
-          "name": "University of Twente",
-          "department": "Creative Technology",
-          "degree": "Bachelor of Science (BSc)"
-        }
-      ],
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Athom B.V.",
-        "department": "Mobile Development"
-      },
-      "memberOf": [
-        {
-          "@type": "Organization",
-          "name": "Stichting Join Us"
-        }
-      ],
-      "owns": [
-        {
-          "@type": "Organization",
-          "name": "Bouke Regnerus",
-          "identifier": "KvK 96884029",
-          "description": "Freelance Youth Coaching"
-        }
-      ],
-      "workExample": [
-        {
-          "@type": "SoftwareApplication",
-          "name": "Homey Mobile App",
-          "applicationCategory": "Smart Home",
-          "operatingSystem": "iOS, Android"
-        }
-      ],
-      "sameAs": [
-        "https://www.linkedin.com/in/boukeregnerus/"
-      ],
-      "nationality": "Dutch"
-    }
+      {% include person-schema.jsonld %}
+    </script>
+    <script type="application/ld+json">
+      {% include website-schema.jsonld %}
     </script>
     
     <style>
@@ -180,25 +65,40 @@
         --background: #f3f0fa;
         --text: #2d2d2d;
         --muted: #777;
+        --hover-bg: rgba(160, 120, 255, 0.1);
       }
+      
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --primary: #a078ff;
+          --background: #1a1a1a;
+          --text: #e4e4e4;
+          --muted: #a0a0a0;
+          --hover-bg: rgba(177, 138, 255, 0.15);
+        }
+      }
+      
       * {
         box-sizing: border-box;
       }
-      html,
-      body {
+
+      html, body {
+        height: 100%;
         margin: 0;
         padding: 0;
+        display: flex;
+        flex-direction: column;
         font-family: 'Inter', sans-serif;
         background-color: var(--background);
         color: var(--text);
-        height: 100%;
       }
+
       main {
+        flex: 1;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 100vh;
         text-align: center;
         padding: 1rem;
       }
@@ -208,6 +108,7 @@
         margin-bottom: 1rem;
       }
       .draw-path {
+        stroke: var(--primary);
         stroke-dasharray: 1438;
         stroke-dashoffset: 1438;
         animation: draw-initial 2.5s ease-out forwards;
@@ -263,7 +164,7 @@
         display: inline-block;
       }
       .contact a:hover {
-        background-color: rgba(160, 120, 255, 0.1);
+        background-color: var(--hover-bg);
       }
       .visually-hidden {
         position: absolute;
@@ -272,6 +173,29 @@
         width: 1px;
         height: 1px;
         overflow: hidden;
+      }
+
+      footer {
+        text-align: center;
+        padding: 1.5rem 1rem;
+        font-size: 0.9rem;
+        color: var(--muted);
+        background-color: var(--background);
+      }
+
+      footer a {
+        color: var(--muted);
+        text-decoration: none;
+        margin: 0 0.4rem;
+        transition: color 0.2s ease;
+      }
+
+      footer a:hover {
+        color: var(--primary);
+      }
+
+      .lang-switch a {
+        font-weight: 600;
       }
     </style>
   </head>
@@ -282,24 +206,23 @@
           <path
             class="draw-path"
             d="M21 344.942c28.574-40.49 65.597-102.838 56.155-233.25 7.288 157.984 58.06 235.734 152.313 233.25 141.38-3.726 121.006-139.85 70.814-177.607-50.191-37.758-144.362-61.604-144.362-4.968 0 56.635 104.607 40.49 144.362 4.968C340.038 131.813 357.68 25 149.46 25"
-            stroke="#A078FF"
             stroke-width="50"
             fill="none"
           />
         </svg>
         
-        <h1 class="fn p-name">Bouke Regnerus</h1>
+        <h1 class="fn p-name">{{ site.title }}</h1>
         
         <div class="visually-hidden">
           <span class="given-name p-given-name">Bouke</span>
           <span class="family-name p-family-name">Regnerus</span>
         </div>
-        
-        <div class="job-title title p-job-title">Mobile App Developer & Youth Coach</div>
-        <div class="role p-role">Code for Devices. Coaching for People.</div>
+
+        <div class="job-title title p-job-title">{{ site.data.translations[page.lang].job_title }}</div>
+        <div class="role p-role">{{ site.data.translations[page.lang].role }}</div>
         
         <div class="location adr p-adr h-adr">
-          <span class="locality p-locality">Enschede</span>, <span class="country-name p-country-name">Netherlands</span>
+          <span class="locality p-locality">{{ site.data.translations[page.lang].locality }}</span>, <span class="country-name p-country-name">{{ site.data.translations[page.lang].country }}</span>
           <span class="visually-hidden">
             <span class="region p-region">Overijssel</span>
             <span class="latitude p-latitude">52.2215</span>
@@ -320,7 +243,7 @@
           <a href="https://www.linkedin.com/in/boukeregnerus/" class="url p-url">LinkedIn Profile</a>
           <span class="org p-org">Athom B.V.</span>
           <span class="org p-org">Bouke Regnerus (KvK 96884029)</span>
-          <span class="note p-note">Mobile App Developer at Athom (Homey) and freelance Youth Coach, building React Native apps and supporting young people with social challenges. Based in Enschede, Netherlands.</span>
+          <span class="note p-note">{{ site.data.translations[page.lang].note }}</span>
           <span class="education p-education">MSc Human Media Interaction, University of Twente</span>
           <span class="education p-education">BSc Creative Technology, University of Twente</span>
           <span class="category p-category">React Native</span>
@@ -336,5 +259,17 @@
         </div>
       </div>
     </main>
+    <footer>
+      <p>
+        &copy; {{ "now" | date: "%Y" }} Bouke Regnerus
+        <span class="lang-switch">
+          {% if page.lang == "en" %}
+            <a href="/nl/">🇳🇱 Nederlands</a>
+          {% elsif page.lang == "nl" %}
+            <a href="/">🇬🇧 English</a>
+          {% endif %}
+        </span>
+      </p>
+    </footer>
   </body>
 </html>
