@@ -203,6 +203,27 @@
         height: 72px;
         margin-bottom: 1rem;
       }
+      .draw-path {
+        stroke-dasharray: 1438;
+        stroke-dashoffset: 1438;
+        animation: draw-initial 2.5s ease-out forwards;
+      }
+      @keyframes draw-initial {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+      .draw-path:hover {
+        animation: draw-hover 2.5s ease-out forwards;
+      }
+      @keyframes draw-hover {
+        0% {
+          stroke-dashoffset: 1438;
+        }
+        100% {
+          stroke-dashoffset: 0;
+        }
+      }
       h1 {
         margin: 0 0 0.5rem 0;
         font-size: 2rem;
@@ -254,6 +275,7 @@
       <div class="vcard h-card">
         <svg viewBox="0 0 363 370" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path
+            class="draw-path"
             d="M21 344.942c28.574-40.49 65.597-102.838 56.155-233.25 7.288 157.984 58.06 235.734 152.313 233.25 141.38-3.726 121.006-139.85 70.814-177.607-50.191-37.758-144.362-61.604-144.362-4.968 0 56.635 104.607 40.49 144.362 4.968C340.038 131.813 357.68 25 149.46 25"
             stroke="#A078FF"
             stroke-width="50"
