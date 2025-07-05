@@ -1,14 +1,10 @@
-# Mac finder artifacts
 .DS_Store
-
-# Sublime Text project files
-*.sublime-project
-*.sublime-workspace
-
-# Local files
 *.build
 *static/fonts
 .htaccess
-
-# SASS
+_site
 .sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+Gemfile.lock
