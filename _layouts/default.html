@@ -193,10 +193,6 @@
       footer a:hover {
         color: var(--primary);
       }
-
-      .lang-switch a {
-        font-weight: 600;
-      }
     </style>
   </head>
   <body>
@@ -261,7 +257,8 @@
     </main>
     <footer>
       <p>
-        &copy; {{ "now" | date: "%Y" }} Bouke Regnerus
+        <a href="https://github.com/regnerus">{{ "now" | date: "%Y" }} Bouke Regnerus</a>
+        <a href="https://www.kvk.nl/bestellen/#/96884029000062169459">KVK 96884029</a>
         <span class="lang-switch">
           {% if page.lang == "en" %}
             <a href="/nl/">🇳🇱 Nederlands</a>
