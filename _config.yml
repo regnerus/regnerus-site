@@ -1,6 +1,9 @@
 title: "Bouke Regnerus"
+url: "https://regner.us"
 baseurl: ""
 lang: "en"
 permalink: pretty
 exclude:
   - index.markdown
+  - README.md
+  - config.json
