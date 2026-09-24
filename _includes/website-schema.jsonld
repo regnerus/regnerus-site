@@ -1,16 +1,9 @@
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "url": "http://regner.us",
+  "@id": "{{ '/' | absolute_url }}#website",
+  "url": "{{ '/' | absolute_url }}",
   "name": "Bouke Regnerus",
-  "author": {
-    "@type": "Person",
-    "name": "Bouke Regnerus"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Bouke Regnerus",
-    "identifier": "KvK 96884029"
-  },
-  "inLanguage": "{{ page.lang | default: site.lang }}"
+  "author": { "@id": "{{ '/' | absolute_url }}#person" },
+  "inLanguage": ["en", "nl"]
 }
