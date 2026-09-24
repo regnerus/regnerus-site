@@ -4,7 +4,7 @@
   "name": "Bouke Regnerus",
   "givenName": "Bouke",
   "familyName": "Regnerus",
-  "jobTitle": "{{ site.data.translations[page.lang].job_title }}",
+  "jobTitle": "{{ site.data.translations[page.lang].schema_job_title | default: site.data.translations[page.lang].job_title }}",
   "url": "http://regner.us",
   "email": "bouke@regner.us",
   "telephone": "+31612455817",
@@ -55,7 +55,7 @@
     },
     {
       "@type": "Occupation",
-      "name": "Youth Coach",
+      "name": "{{ site.data.translations[page.lang].coaching_title | default: 'Youth Coach' }}",
       "occupationLocation": {
         "@type": "Organization",
         "name": "Bouke Regnerus",

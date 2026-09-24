@@ -10,7 +10,7 @@
     <meta name="keywords" content="{{ site.data.translations[page.lang].keywords }}" />
     <meta name="author" content="Bouke Regnerus" />
     <meta name="robots" content="index, follow" />
-    <meta name="language" content="en-US" />
+    <meta name="language" content="{{ site.data.translations[page.lang].language | default: 'en-US' }}" />
     <meta name="geo.region" content="NL-OV" />
     <meta name="geo.placename" content="Enschede" />
     <meta name="geo.position" content="52.2215;6.8937" />
@@ -32,7 +32,7 @@
     <meta property="og:title" content="{{ site.title }} – {{ site.data.translations[page.lang].title }}" />
     <meta property="og:description" content="{{ site.data.translations[page.lang].meta_description_short }}" />
     <meta property="og:site_name" content="Bouke Regnerus" />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content="{{ site.data.translations[page.lang].locale | default: 'en_US' }}" />
     <meta property="og:latitude" content="52.2215" />
     <meta property="og:longitude" content="6.8937" />
     <meta property="og:locality" content="Enschede" />
@@ -151,6 +151,16 @@
         font-size: 0.9rem;
         color: var(--muted);
       }
+      .intro {
+        max-width: 36rem;
+        margin: 0 auto 1.5rem;
+        text-align: left;
+        font-size: 1rem;
+        line-height: 1.65;
+      }
+      .intro p {
+        margin: 0 0 1rem;
+      }
       .contact {
         margin: 0.5rem 0;
         font-size: 1rem;
@@ -226,6 +236,14 @@
           </span>
         </div>
         
+        {% if site.data.translations[page.lang].intro %}
+        <div class="intro">
+          {% for paragraph in site.data.translations[page.lang].intro %}
+          <p>{{ paragraph | escape }}</p>
+          {% endfor %}
+        </div>
+        {% endif %}
+
         <div class="contact">
           <a href="mailto:bouke@regner.us" class="email p-email">bouke@regner.us</a>
         </div>
