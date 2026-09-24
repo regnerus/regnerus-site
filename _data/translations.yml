@@ -9,9 +9,6 @@ en:
   locale: "en_GB"
   alternate_locale: "nl_NL"
   language: "en-GB"
-  intro:
-    - "At Athom, I’m responsible for Homey’s mobile app for iOS and Android. I work in React Native on new features and the technical development of the app, including Homey Energy."
-    - "I also work as a freelance Kickstart coach at Join Us. During an eight-week online programme, I help young adults understand what holds them back socially and work on their confidence, social skills and relationships."
   note: "Responsible for Homey’s mobile app at Athom and freelance Kickstart coach at Join Us. Based in Enschede, Netherlands."
   locality: "Enschede"
   country: "Netherlands"
@@ -27,9 +24,6 @@ nl:
   locale: "nl_NL"
   alternate_locale: "en_GB"
   language: "nl-NL"
-  intro:
-    - "Bij Athom ben ik verantwoordelijk voor de mobiele app van Homey voor iOS en Android. Ik werk dagelijks in React Native aan nieuwe functies en de technische ontwikkeling van de app, waaronder Homey Energy."
-    - "Daarnaast werk ik als freelance Kickstart-coach bij Join Us. Tijdens een online programma van acht weken help ik jongvolwassenen ontdekken wat hen sociaal tegenhoudt en werken aan hun zelfvertrouwen, sociale vaardigheden en contacten."
   note: "Verantwoordelijk voor de mobiele app van Homey bij Athom en freelance Kickstart-coach bij Join Us. Gevestigd in Enschede, Nederland."
   locality: "Enschede"
   country: "Nederland"

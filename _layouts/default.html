@@ -160,16 +160,6 @@
         font-size: 0.9rem;
         color: var(--muted);
       }
-      .intro {
-        max-width: 36rem;
-        margin: 0 auto 1.5rem;
-        text-align: left;
-        font-size: 1rem;
-        line-height: 1.65;
-      }
-      .intro p {
-        margin: 0 0 1rem;
-      }
       .contact {
         margin: 0.5rem 0;
         font-size: 1rem;
@@ -227,14 +217,6 @@
         <div class="location adr p-adr h-adr">
           <span class="locality p-locality">{{ site.data.translations[page.lang].locality }}</span>, <span class="country-name p-country-name">{{ site.data.translations[page.lang].country }}</span>
         </div>
-
-        {% if site.data.translations[page.lang].intro %}
-        <div class="intro">
-          {% for paragraph in site.data.translations[page.lang].intro %}
-          <p>{{ paragraph | escape }}</p>
-          {% endfor %}
-        </div>
-        {% endif %}
 
         <div class="contact">
           <a href="mailto:bouke@regner.us" class="email p-email">bouke@regner.us</a>
